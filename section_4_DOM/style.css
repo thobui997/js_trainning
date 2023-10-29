@@ -1,0 +1,13 @@
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.abc {
+  width: 100px;
+}
