@@ -7,8 +7,9 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div class="carousel">
-			<button class="carousel-btn previous">
+		<div class="carousel" data-carousel>
+			<button class="carousel-btn previous" data-carousel-button="previous">
+				<!-- svg là 1 dạng icon được vẽ theo kiểu vectơ -->
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="16"
@@ -24,7 +25,7 @@
 				</svg>
 			</button>
       
-			<button class="carousel-btn next">
+			<button class="carousel-btn next" data-carousel-button="next">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="16"
@@ -40,7 +41,12 @@
 				</svg>
 			</button>
 
-			<ul class="slides">
+			<ul class="slides" data-slides>
+				<!-- 
+					- data-*: là custom attribute do mình định nghĩa bắt đầu bằng tiền tố data- 
+					- *: sẽ thay thế bằng tên attribute do m đặt (active, name, age,...)
+					ex: data-age="19", data-active
+				-->
 				<li class="slide-item" data-active>
 					<img
 						src="https://images.unsplash.com/photo-1682685797660-3d847763208e?auto=format&fit=crop&q=80&w=3570&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -70,6 +76,6 @@
       </div>
 		</div>
 
-		<script src="./main.js"></script>
+		<script src="./main2.js"></script>
 	</body>
 </html>
