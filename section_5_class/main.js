@@ -53,3 +53,39 @@ const tho = new Person("tho", "bui", 28, "nam", "dong ho");
 // console.log("tho", tho.lastName);
 // console.log("tho", tho.age);
 // console.log("tho", tho.gender);
+
+// kế thừa: là khả năng của 1 class có thể thừa hưởng các property, method từ 1 class khác (class cha), những class được thừa hưởng (class con)
+
+class Animal {
+	constructor(name, age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	makeSound() {
+		console.log("tieng keu khung long");
+	}
+}
+
+class Dog extends Animal {
+	makeSound() {
+		console.log("gau gau gau");
+	}
+}
+
+class Cat extends Animal {
+	makeSound() {
+		console.log("meo meo meo");
+	}
+}
+
+const fox = new Dog("fox", 18);
+const cat1 = new Cat("meo anh long ngan", 18);
+
+console.log(fox.name);
+console.log(fox.age);
+console.log(fox.makeSound());
+
+console.log(cat1.name);
+console.log(cat1.age);
+console.log(cat1.makeSound());
