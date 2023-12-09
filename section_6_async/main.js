@@ -94,7 +94,7 @@ myPromise
 		console.log(err);
 	}); // chaining
 
-const getImageFromServerv2 = (url, resole, reject) => {
+const getImageFromServerV2 = (url, resole, reject) => {
 	const httpClient = new XMLHttpRequest();
 	httpClient.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
@@ -106,15 +106,15 @@ const getImageFromServerv2 = (url, resole, reject) => {
 };
 
 const promise1 = new Promise((resole, reject) => {
-	getImageFromServerv2("https://picsum.photos/200/300", resole, reject);
+	getImageFromServerV2("https://picsum.photos/200/300", resole, reject);
 });
 
 const promise2 = new Promise((resole, reject) => {
-	getImageFromServerv2("https://picsum.photos/200/300", resole, reject);
+	getImageFromServerV2("https://picsum.photos/200/300", resole, reject);
 });
 
 const promise3 = new Promise((resole, reject) => {
-	getImageFromServerv2("https://picsum.photos/200/300", resole, reject);
+	getImageFromServerV2("https://picsum.photos/200/300", resole, reject);
 });
 
 // promise1
